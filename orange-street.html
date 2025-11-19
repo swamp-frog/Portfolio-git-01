@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onion-creek-html</title>
+<style>
+    /* @keyframes fade-in{
+            0%{
+            opacity: 0;
+            }
+            100%{
+            opacity: 1;
+            }
+        } */
+
+       @keyframes blur{
+            0%{
+                filter: blur(60px);
+            }
+            100%{
+                filter: blur(0px);
+            }
+        }
+
+        @keyframes opacity{
+            0%{
+                opacity: 0%;
+            }
+            100%{
+                opacity: 100%;
+                }
+        }
+
+        @keyframes black{
+            0%{
+                background-color: whitesmoke;
+            }
+            100%{
+                background-color: black;
+            }
+        }
+
+        @keyframes opacity{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+    html {
+            /* animation: fade-in 1s ease-in-out; */
+            min-height: 200%;
+            /* animation: black 1s ease-in-out; */
+            /* animation: opacity 1s ease-in-out; */
+            /* animation: blur 0.5s forwards; */
+            /* animation: opacity 0.2s forwards; */
+
+        }
+        
+        body {
+        /* background-color: #bfbfbf; */
+        /* background-color: whitesmoke */
+        display: flex;
+        flex-direction: column;
+        font-family: "lucida console", monaco, monospace;
+        height: auto;
+        background-color: whitesmoke    ;
+        }
+
+    .flex-parent {
+        /* background: #bfbfbf; */
+        /* background-color: whitesmoke; */
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 2%;
+        margin-left: 50%;
+        translate: -50%;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        top:0%;
+        left: 0;
+        z-index: 9;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+    .itakelessspace {
+      display:flex;
+      flex-direction: row;
+      text-align: center;
+      background-color:lightblue;
+      transition: background-color 0.5s ease-in-out;  
+      }
+      
+      /* .itakelessspace:hover {
+      background-color: lightblue;
+      color:black;
+      transition: background-color 1s;
+      } */
+
+    .bigcenterimagecontainer {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        /* width: 62%; */
+        width: 100%;
+        height: auto;
+        margin-top:7%;
+        left:50%;
+        top:0%;
+        transform: translatex(-50%);
+        /* overflow: hidden; */
+        overflow: visible;
+      }
+
+      .photo{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        /* margin-top: -4%; */
+        /* margin-bottom: -18%; */
+        transition: filter 1s ease-in-out;
+      }
+      .photo-vertical{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        /* margin-bottom: 3%; */
+      }
+      .photo:hover{
+        /* filter: blur(10px); */
+      }
+
+      /* .video:hover{
+        filter: blur(50px);
+      } */
+        </style>
+    </head>
+<body>
+    <div class="flex-parent">
+    <!-- <div class="itakelessspace">Through the Blinds</div> -->
+    </div>
+
+    <div class="bigcenterimagecontainer">
+        <img src="orangebook1.png" type="img/png" class="photo-vertical">
+        <img src="orangebook2.png" type="img/png" class="photo-vertical">
+        <img src="orangebook3.png" type="img/png" class="photo">
+        <img src="orangebook4.png" type="img/png" class="photo">
+        <img src="orangebook5.png" type="img/png" class="photo-vertical">
+        <img src="orangebook6.png" type="img/png" class="photo">
+        <img src="orangebook7.png" type="img/png" class="photo">
+        <img src="orangebook8.png" type="img/png" class="photo">
+        
+    </div>
+
+    
+</body>
+</html>

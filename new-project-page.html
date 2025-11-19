@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Projects</title>
+<link rel="icon" type="image/png" href="favicon-test.png">
+        
+<style>
+        @keyframes fade-in{
+            0%{
+            opacity: 0;
+            }
+            100%{
+            opacity: 1;
+            }
+          }
+
+          @keyframes opacity{
+            0%{
+                opacity: 0%;
+            }
+            100%{
+                opacity: 100%;
+                }
+        }
+        
+        html {
+        /* animation: fade-in 1s ease-in-out; */
+        }
+        
+
+        *{
+        box-sizing: border-box;
+    
+        }
+        body{
+        font-family: monospace;
+        background-color: whitesmoke;
+        /* height: 120vh; */
+        /* height: auto; */
+        min-height: 100vh;
+        /* cursor: url('./cross4.png') 52 52, auto; */
+        }
+
+        .background{
+        /* background: #bfbfbf; */
+        background-color: whitesmoke;
+        min-height: 97vh;
+        }
+
+        .flex-parent {
+        /* background: #bfbfbf; */
+        /* background-color: whitesmoke; */
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 2%;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        top:0%;
+        left: 0;
+        z-index: 10;
+        /* border-top: 8px solid white; */
+        /* justify-content: space-between; */
+        justify-content: flex-start;
+        align-items: center;
+        transition: background-color 0.5s ease-in-out;
+        }
+
+        .flex-parent-2 {
+        padding-top: 7%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 0%;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        top:0%;
+        left: 0;
+        z-index: 9;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.5s ease-in-out;
+        }
+
+        .itakemorespace {
+        background-color:blue;
+        color: white;
+        padding-left: 8vh;
+        padding-right: 8vh;
+        transition: background-color 0.5s ease-in-out, color 1s ease-in-out, padding 0.5s ease-in-out;    
+        }
+
+        .itakemorespace:hover {
+        background-color: lightblue;
+        }
+
+        .itakelessspace {
+        -webkit-user-select: none;
+        /* cursor: pointer; */
+        display:flex;
+        margin-right: 1%;
+        flex-direction: row;
+        text-align: center;
+        background-color:white;
+        transition: background-color 0.5s ease-in-out;
+        }
+
+        .lightgreen{
+          background-color: lightgreen;
+        }
+
+        .lightyellow{
+          background-color: #FFFFCC;
+        }
+
+        .pink {
+          background-color: #FFAACC;
+        }
+
+        .purple{
+          background-color: orchid;
+        }
+
+        .lightpurple{
+          background-color: #F28FE6;
+        }
+
+        .white{
+          background-color: white;
+        }
+        
+        .yellow{
+          background-color: #ffff99;
+        }
+        .itakelessspace:hover {
+        background-color: lightblue;
+        color:black;
+        transition: background-color 1s;
+        }
+      
+        .itakelessspace a{
+        color:black;
+        transition: color 1s;
+        }
+      
+        .itakelessspace a:hover{
+        color:black;
+        }
+
+        .itakemorespace a{
+        color: white;
+        transition: color 1s;
+        }
+
+        .itakemorespace a:hover{
+        color:black;
+        }
+
+        a:link,
+        a:visited {
+        text-decoration: none;
+        }
+
+        a.active {
+        background-color: lightblue;
+        color: black;
+        transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
+        }
+
+        .wave-text {
+        /* background-color: white; */
+        /* color:cornflowerblue; */
+        color:azure;
+        margin-top: 250px;
+        margin-right: 800px;
+        margin-bottom: 50%;
+        margin-left: 650px;
+        transform: skew(0deg, 0deg);
+        line-height: 100%;
+        position: absolute;
+        animation: skew 5s ease-in-out infinite, margin-top 4s ease-in-out;
+        transition: background-color 1s ease-in-out, color 1s ease-in-out, line-height 1s ease-in-out;
+        }
+
+        .itakelessspace2 {
+        -webkit-user-select: none;
+        cursor: pointer;
+        display:flex;
+        flex-direction: row;
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        transition: background-color 0.5s ease-in-out, padding 1s ease-in-out, font-size 0.5s ease-in-out;
+        }
+
+        .itakelessspace2:hover {
+          cursor: pointer;
+        background-color: lightblue;
+        color:black;
+        /* font-size: 14px; */
+        /* padding-left: 1%; */
+        /* padding-right: 1%; */
+        }
+
+        .active-button{
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+          background-color: lightblue;
+        }
+
+
+        /* PROBLEM */
+        /* .itakelessspace2 a:active { 
+        background-color: red;
+        padding-left: 1%;
+        padding-right: 1%;
+        } */
+
+
+        .itakelessspace2 a{
+        color:black;
+        transition: color 1s;
+        }
+      
+        .itakelessspace2 a:hover{
+        color:black;
+        }
+
+        .iframe{
+        position: fixed;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: none;
+        /* z-index: 999; */
+        overflow-y: auto;
+        }
+
+        .footer {
+        /* z-index: 11; */
+        position: fixed;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        /* background-color: white; */
+        text-align: left;
+        transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
+        -webkit-user-select: none;
+        cursor: pointer;
+        }
+ 
+        /* .footer:hover {
+        background-color: lightgreen;
+        } */
+
+     
+
+        .hidden {
+        opacity: 0;
+        display: none;
+        /* filter: blur(40px); */
+        /* visibility: hidden; */
+        /* transition: opacity 1s ease-in-out, filter 5s ease-in-out; */
+        }
+        /* .iframe:not (.hidden){
+            opacity: 50%;
+        } */
+       .td, th {
+      display: table-cell;
+    }
+    .opacityanimation{
+     animation: opacity 0.5s ease-in-out;
+    }
+
+    
+
+   
+       </style>
+  </head>
+  <body>
+        <div class="flex-parent">
+            
+            <div class="itakelessspace"><a href="index.html">Home Page</a></div>
+            <div class="itakelessspace"><a href="new-project-page.html" class="active">Projects</a></div>
+            <div class="itakelessspace"><a href="Portfolio Website AboutPage copy.html">About</a></div>
+            <div class="itakelessspace"><a href="">index</a></div>
+        </div>
+    
+        <div class="flex-parent-2">
+          <div class="itakelessspace2 purple" data-target="onion">Onion Creek</div>
+            <div class="itakelessspace2 purple" data-target="orange">Orange Street</div>
+            <div class="itakelessspace2 purple" data-target="poetry">Poetry Magazine</div>
+            <div class="itakelessspace2 yellow" data-target="hands">Workshop Indicators</div>
+            <div class="itakelessspace2 yellow" data-target="interrobang">Interrobang</div>
+            <div class="itakelessspace2 yellow" data-target="cutout">Cut Out?</div>
+            <div class="itakelessspace2 lightgreen" data-target="flagpoetry">Flag Poetry</div>
+            <div class="itakelessspace2 lightgreen">Ideamaker</div>
+            <div class="itakelessspace2 lightyellow" data-target="blinds">Blinds</div>
+            <div class="itakelessspace2 pink">Experimental</div>
+            <div class="itakelessspace2 white">Small Things</div>
+            <div class="itakelessspace2 white">Screw and Plaster</div>
+            <div class="itakelessspace2 white">Moto Shell</div>
+            
+        </div>
+        <iframe id="onion" class="iframe hidden"  src="onion-creek.html" scrolling="yes">iframe-text</iframe>
+        <iframe id="blinds" class="iframe hidden" src="through-the-blinds.html" scrolling="yes">iframe-text</iframe>
+        <iframe id="orange" class="iframe hidden" src="orange-street.html" scrolling="yes">iframe-text</iframe>
+        <iframe id="poetry" class="iframe hidden" src="poetry-book.html" scrolling="yes">iframe-text</iframe>
+        <iframe id="hands" class="iframe hidden" src="hands.html" scrolling="yes">iframe-text</iframe>
+        <iframe id="interrobang" class="iframe hidden" src="interrobang.html" scrolling="yes">iframe-text</iframe>
+        <iframe id="cutout" class="iframe hidden" src="cutout.html" scrolling="yes">iframe-text</iframe>
+        <iframe id="flagpoetry" class="iframe hidden" src="begining.html" scrolling="yes">iframe-text</iframe>
+
+
+
+
+    <div class="footer">© 2025 David Mihai</div>
+
+    <script>
+
+let activeIframe = null;
+  function clearActiveButtons() {
+    buttons.forEach(btn => btn.classList.remove('active-button'));
+  }
+        const buttons = document.querySelectorAll('[data-target]');
+        const iframes = document.querySelectorAll('.iframe');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const targetIframe = document.getElementById(targetId);
+        
+
+        if (activeIframe === targetIframe) {
+            targetIframe.classList.add('hidden');
+            targetIframe.classList.remove('opacityanimation');
+            activeIframe = null;
+            clearActiveButtons();
+            return;
+        }
+
+        iframes.forEach(frame => frame.classList.add('hidden'));
+        clearActiveButtons();
+
+        targetIframe.classList.remove('hidden');
+        targetIframe.classList.add('opacityanimation');
+        button.classList.add('active-button');
+
+        activeIframe = targetIframe;
+    });
+    });
+if (buttons.length > 0) {
+  buttons[0].click();
+}
+
+    // document.body.style.cursor = 'url("fork.png")25 5, auto';
+
+    </script>
+
+</body>
+</html>

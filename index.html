@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="favicon-test.png">
+        
+    <style>
+      @keyframes fade-in{
+            0%{
+            opacity: 0;
+            /* filter: blur(50px); */
+            }
+            100%{
+            opacity: 1;
+            /* filter: blur(0px); */
+            }
+        }
+        html {
+            /* animation: fade-in 1s ease-in-out; */
+        }
+      
+      *{
+      box-sizing: border-box; 
+      }
+
+      body {
+      /* background-color: #bfbfbf; */
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      font-family: monospace;
+      min-height: 110vh;
+      /* border: 8px solid white;
+      width: 100%; */
+      }
+      main{
+        flex: 1;
+      }
+      .flex-parent {
+        /* background: #bfbfbf; */
+        /* background-color: whitesmoke; */
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 2%;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        top:0%;
+        left: 0;
+        z-index: 9;
+        /* justify-content: space-between; */
+        justify-content: flex-start;
+        align-items: center;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      .itakemorespace {
+        background-color:blue;
+        color: white;
+        padding-left: 8vh;
+        padding-right: 8vh;
+        transition: background-color 0.5s ease-in-out, color 1s ease-in-out, padding 0.5s ease-in-out;
+      }
+
+      .itakemorespace:hover {
+      background-color: lightblue;
+      }
+
+      .itakelessspace {
+      display:flex;
+      margin-right: 1%;
+      flex-direction: row;
+      text-align: center;
+      background-color:white;
+      transition: background-color 0.5s ease-in-out;  
+      }
+      
+      .itakelessspace:hover {
+      background-color: lightblue;
+      color:black;
+      transition: background-color 1s;
+      }
+      
+      .itakelessspace a{
+      color:black;
+      transition: color 1s;
+      }
+      
+      .itakelessspace a:hover{
+      color:black;
+      }
+      
+      .itakemorespace a{
+      color: white;
+      transition: color 1s;
+      }
+
+      .itakemorespace a:hover{
+      color:black;
+      }
+      a:link,
+      a:visited {
+      text-decoration: none;
+      }
+
+      a.active {
+      background-color: lightblue;
+      color: black;
+      transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
+      }
+
+      /* a.active:hover {
+      background-color: blue;
+      color: white;
+      } */
+
+       .bigcenterimagecontainer {
+        flex-basis: 65%;
+        display: block;
+        position: fixed;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        /* margin-top: 0%; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        top: 0;
+        left: 0;
+        margin-bottom: 5%;
+      }
+      .bigcenterimagecontainer img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .overlay {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      
+      transition: opacity 0.6s ease-in-out;
+    }
+
+    .hidden {
+    display: none !important;
+    }
+
+    .overlay:hover{
+    opacity:70%;
+    }
+
+    .minime {
+    align-self: flex-end;
+    display:flex;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 120px;
+    height:auto;
+    margin-right:0%;
+    margin-left: auto;  
+    }
+
+    .footer {
+      position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    /* background-color: white; */
+    text-align: left;
+    transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
+    -webkit-user-select: none;
+    cursor: pointer;
+    }
+ 
+    .footer:hover {
+    /* background-color: lightgreen; */
+    /* color: lightgreen; */
+    }
+
+
+
+    .table-column{
+      width: 20%;
+      padding: 0 1%;
+    }
+    .table-image img {
+      width: 100%;
+      height: 100%;
+    }
+    .table-image {
+      width: 100%;
+      height: auto;
+      margin-top: 10%;
+      /* max-width: 100%; */
+    }
+    .wsite-multicol-table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+      border-collapse: collapse;
+      /* display: none;
+       */
+    }
+    .table {
+        display: none;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+    text-indent: initial;
+    }
+
+   
+    
+    </style>
+  </head>
+<title>My Links</title>
+  <body>
+    
+    
+    <div class="flex-parent">
+      
+      <div class="itakelessspace active"><a href="index.html" class="active">Home Page</a></div>
+      <div class="itakelessspace"><a href="new-project-page.html">Projects</a></div>
+      <div class="itakelessspace"><a href="Portfolio Website AboutPage copy.html">About</a></div>
+      <div class="itakelessspace"><a href="">index</a></div>
+</div>
+
+        <!-- <a class="footer" id="randomBtn">Random project</a> -->
+      <main>
+      <div class="bigcenterimagecontainer">
+            <video class="baseimage" width="100%" autoplay loop muted>
+            <source src="IMG_3047.MOV" type="video/mp4"></video>
+            <img src="IMG_3025.jpg" class="overlay"alt="overlay3">
+            <img src="IMG_3029.jpg" class="overlay" alt="overlay2">
+            <img src="IMG_3046.jpg" class="overlay" alt="overlay1">
+    </div>
+    </main>
+    
+<!-- <table class="wsite-multicol-table">
+<tbody>
+    <tr>
+      <td class="table-column">
+        <a href="onion-creek.html"><img data-target="onion" class="table-image" src="onion-photo-1.jpg"></a>
+        <img class="table-image" src="orange-street-1.jpg">
+        <img class="table-image" src="usa6.jpg">
+        <img class="table-image" src="Scan 46.jpg">
+        <img class="table-image" src="APC_3150.jpg">
+      </td>
+
+      <td class="table-column">
+        <img class="table-image" src="onion-photo-2.jpg">
+        <img class="table-image" src="orange-street-2.jpg">
+        <img class="table-image" src="usa4.jpg">
+        <img class="table-image" src="Scan 51.jpg">
+        <img class="table-image" src="APC_3151.jpg">
+      </td>
+
+      <td class="table-column">
+        <img class="table-image" src="onion-photo-3.jpg">
+        <img class="table-image" src="orange-street-3.jpg">
+        <img class="table-image" src="usa2.jpg">
+        <img class="table-image" src="Scan 52.jpg">
+        <img class="table-image" src="APC_3148.jpg">
+      </td>
+
+      <td class="table-column">
+      <img class="table-image" src="onion-photo-4.jpg">
+      <img class="table-image" src="orange-street-4.jpg">
+      <img class="table-image" src="usa7.jpg">
+      <img class="table-image" src="Scan 53.jpg">
+      <img class="table-image" src="APC_3149.jpg">
+      </td>
+    </tr>
+  </tbody>
+</table> -->
+
+    <div class="footer">© 2025 David Mihai</div>
+
+<script>
+      
+const overlays = document.querySelectorAll('.overlay');
+
+    overlays.forEach(img => {
+
+      img.addEventListener('click', function (e) {
+        console.log(e.target); 
+        e.target.style.display = "none";
+      });
+    });
+
+    const links = [
+     "random link",
+     "random link",
+     "random link"
+    ];
+      
+      document.getElementById('randomBtn').addEventListener('click', () => {
+      const randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    });
+
+
+    //     const buttons = document.querySelectorAll('[data-target]');
+    //     const iframes = document.querySelectorAll('.iframe');
+
+    // buttons.forEach(button => {
+    //     button.addEventListener('click', () => {
+    //     const targetId = button.getAttribute('data-target');
+    //     const targetIframe = document.getElementById(targetId);
+        
+
+    //     iframes.forEach(frame => frame.classList.add('hidden'));
+
+        
+
+    //     targetIframe.classList.remove('hidden');
+    // });
+    // });
+    </script>
+    
+  </body>
+</html>
